@@ -1,0 +1,204 @@
+body {
+    background-color: #132e52;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar if needed */
+    transition: filter 0.1s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.spacer {
+    padding-top: clamp(1rem, 15vw, 2rem);
+    padding-bottom: clamp(1rem, 5vw, 5rem);
+}
+
+.headertext {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.headertext h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Contacts html*/
+.contacts h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    transform: translate(0, -.8rem);
+    }
+
+
+
+    .contacts-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12%;
+        padding: 0 1rem 1rem 1rem;
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .contacts-child {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-gap: .5rem;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.329);
+        border-radius: .5rem;
+        padding: .5rem 0;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.459);
+    }
+
+    .contacts-child h5{
+        width: 100%;
+        text-align: left;
+        color: #cad8da;
+        text-decoration: underline;
+    }
+    
+    .contacts-child h3{
+        padding-right: 3rem;
+
+    }
+
+    .phone {
+        display: flex;
+
+    }
+
+form {
+    background-color: #292929cb;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    padding: 1.5rem;
+    justify-content: center;
+    margin: 0 1rem;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: .5rem;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.459);
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    max-width: 700px;
+    resize: none;
+}
+
+    .emailContainer{
+        max-width: 700px;
+        position: relative;
+       left: 50%;
+       transform: translate(-50%, 0);
+    }
+
+    .messageText  {
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+
+        line-height: clamp(8px, 3vw, 30px);
+        text-align: center;
+        margin-top: 0;
+        color: #cad8da;
+    }
+
+    .messageText input {
+
+        padding: 2px; /* Add some padding */
+        box-sizing: border-box; /* Include padding in width and height */
+    }
+
+    .emailContainer h1 {
+        font-size: clamp(20px, 2vw + .2rem, 64px);
+    }
+
+form button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    max-width: 30%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    padding: .5rem 1rem;
+    display: inline-block;
+    background: linear-gradient(90deg, #132E52 0%, #2296BF 100%, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border-radius: 50px;
+    border-style: none;
+
+}
+
+@media (max-width: 500px) {
+form button {
+    font-size: clamp(6px, 1vw + .25rem, 24px);
+}
+}
+@media (max-width: 600px) {
+.messageText {
+    font-size: clamp(8px, 1vw + .3rem, 24px);
+}
+.messageText input {
+    max-width: clamp(50px, 10vw + 1rem, 200px); /* Allow it to expand */
+    font-size: clamp(6px, 1vw + -.15rem, 24px);
+
+    max-height: clamp(6px, 10vw + 1rem, 20px);
+}
+textarea {
+   height: clamp(80px, 3vw + 1rem, 150px);
+}
+}
+
+
+  /*sends footer to bootom of the page*/
+  .footer-container {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+
+ /*
+     footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+*/
+    @media (max-width: 767px) {
+.contacts-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+    }

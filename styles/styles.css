@@ -1,0 +1,378 @@
+body {
+    background-color: #132e52;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar if needed */
+    transition: filter 0.1s ease;
+    color: #DFE7E8;
+}
+
+    body strong {
+        color: #fff;
+        font-weight: 700;
+    }
+    
+
+main{
+    height: 100%;
+}
+
+
+
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* hero style image */
+.hero-container {
+    color: #fff;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+}
+
+.hero-image {
+    max-height: 30rem;
+    width: 100%;
+    display: block;
+    z-index:-1;
+}
+
+
+.hero-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -210%);
+    margin-right: -20rem;
+
+    text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.1),  
+     1px -1px 0 rgba(0, 0, 0, 0.1),  
+    -1px  1px 0 rgba(0, 0, 0, 0.1),  
+     1px  1px 0 rgba(0, 0, 0, 0.1);
+
+}
+@media  (max-width: 720px) {
+.hero-text {
+   margin-top: clamp(1rem, 1.5vw, 2rem);
+}
+}
+
+
+.hero-container h4 {
+margin-bottom: 0;
+position: relative;
+top: clamp(2px, .5vw, 10px);
+color: #DFE7E8;
+
+font-size: clamp(8px, 1vw, 24px);
+}
+
+.hero-container h1 {
+    margin-top: 0;
+margin-left: -1px;
+
+font-size: clamp(12px, 3vw, 64px);
+}
+
+
+
+
+@keyframes btn-hover {
+
+    0%{
+        transform: scale(1);
+    }
+    100%{
+    transform: scale(1.5);
+    
+    }
+    
+    }
+
+
+.hero-btn {
+display: inline-block;
+background: linear-gradient(90deg, #132E52 0%, #2296BF 100%, #25aae1, #4481eb, #04befe, #3f86ed);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+text-align: center;
+width: clamp(120px, 14%, 500px);
+position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+bottom: clamp(2rem, 9vw, 10rem);
+font-size: clamp(8px, 1vw, 24px);
+cursor: pointer;
+padding-top: 5px;
+padding-bottom: 5px;
+
+transform-origin: center;
+background-size: 100% 100%;
+
+border-radius: 50px;
+transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+.hero-btn:hover {
+    background-position: 100% 100%;
+    background-size: 200% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+}
+
+
+.card-container {
+    width: 100%;
+    perspective: 2000px;
+}
+
+/*1st card container*/
+.card-child {
+display: grid;
+padding-left: 10%;
+grid-template-columns: repeat(2, 1fr);
+    padding-top: clamp(1rem, 10%, 4rem);
+    opacity: 0; 
+
+}
+.card-child.visible {
+    animation: fadeIn .25s forwards; /* Animation details */
+    animation-delay: 0.35s;
+}
+
+.rightcard {
+    padding-left: 0%;
+    padding-right: 10%;
+
+}
+
+.card-text {
+    grid-column: 1;
+    grid-row: 1; 
+    max-width: 100%;
+    margin-left: 0;
+margin-right: 0;
+align-content: center;
+}
+.rightside {
+    grid-column: 2;
+}
+
+
+.card-text h1 {
+position: relative;
+
+font-size: clamp(10px, 2.25vw, 64px);
+line-height: 0px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+justify-content: center;
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+margin-bottom: clamp(2%, 1vw + 1%, 20%);
+
+}
+
+.fa-phone {
+    padding-right: 6%;
+}
+
+.card-text ul {
+display: grid;
+justify-content: center;
+padding-left: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: clamp(8px, 1vw + .15rem, 24px);
+line-height: clamp(8px, 3vw, 30px);
+margin-top: clamp(10%, 1vw + 3%, 20%);
+color: #cad8da;
+}
+
+.card-text li {
+    padding-bottom: clamp(.3rem, 1vw + .1rem, 1rem);
+}
+
+.pricing {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.pricing li {
+    padding-bottom: clamp(.3rem, 1vw + .1rem, 1rem);
+    font-size: clamp(8px, 1vw + .15rem, 24px);
+}
+
+.pricing h1 {
+    color: #fff;
+    font-size: clamp(15px, 3vw + .2rem, 64px);
+    font-weight: 900;
+}
+
+.pText strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.pText {
+    font-size: clamp(8px, 1vw + .15rem, 24px);
+}
+
+.finishType h1 {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    color: #fff;
+    font-size: clamp(15px, 3vw + .2rem, 64px);
+    box-shadow: 0 -6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-text  strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-foot {
+    position: relative;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(8px, 1vw + .15rem, 24px);
+    line-height: clamp(8px, 3vw, 30px);
+    justify-content: center;
+    text-align: center;
+    margin-top: clamp(3%, 1vw + 3%, 8%);
+    color: #ffffff;
+}
+
+.card-image {
+position: relative;
+display: flex;
+left: 25%;
+width: 60%;
+max-width: 400px;
+}
+
+
+
+.etc h1{
+    position: relative;
+
+font-size: clamp(10px, 2.25vw, 64px);
+line-height: 0px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+justify-content: center;
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+margin-bottom: clamp(2%, 1vw + 1%, 20%);
+}
+
+.etc p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(8px, 1vw + .15rem, 24px);
+    line-height: clamp(8px, 3vw, 30px);
+    text-align: center;
+    margin-top: clamp(10%, 1vw + 3%, 20%);
+    color: #cad8da;
+}
+
+.call {
+    text-decoration: underline;
+}
+
+.spacer {
+    padding-top: clamp(1rem, 15vw, 10rem);
+    padding-bottom: clamp(1rem, 5vw, 10rem);
+}
+
+
+
+/*slide in animations*/
+@keyframes appearRight {
+    0%{
+       translate: 100rem;
+        
+    }
+    100%{
+    }
+}
+
+@keyframes appearLeft {
+    0%{
+        transform: translateX(-100rem);
+    }
+    100%{
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: rotateX(-80deg);
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+/*
+.right {
+    animation: appearRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.left {
+    animation: appearLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.fade {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+*/

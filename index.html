@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <meta name="description" content="2 Bro's Decorative Concrete and Coatings">
+        <meta name="keywords" content="Concrete Polishing, Staining, Epoxy, etc">
+        <meta name="author" content="Zach C">
+        <title>2Bros-dcc Home</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- stylesheet -->
+         <link href="styles/styles.css" rel="stylesheet">
+         <link href="styles/Default.css" rel="stylesheet">
+         <!-- font awesome cdn -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="scripts/scripts.js" defer></script>
+    </head>
+
+<body>
+    <!-- overlay for mobile -->
+    
+     <div id="overlay">
+        <div>
+            <i class="fa  fa-times" title="close mobile navigation" onclick="off()"></i>
+        </div>
+        <div class="overlay-text">
+            <a href="index.html">Home</a>
+            <div></div> <a href="about.html">About</a>
+            <div></div> <a href="faq.html">FAQ</a>
+            <div></div> <a href="contacts.html">Contacts</a>
+        </div>
+
+     </div>
+
+    <header>
+        <nav class="nav full-nav">
+            <div>
+                <img src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" onclick="Home()" style="width: 25%;" loading="lazy">
+            </div>
+            <div>
+                <a href="index.html"><i class="fa-solid fa-house"></i>  Home</a>
+                <a href="about.html"><i class="fa-solid fa-circle-question"></i>  About</a>
+                <a href="faq.html"><i class="fa-solid fa-clipboard-question"></i>  FAQ</a>
+                <a href="contacts.html"><i class="fa-regular fa-address-book"></i>  Contacts</a>
+        </div>  
+    </nav>
+
+    <!-- mobile -->
+    <nav class="nav mobile-nav">
+        <div>
+            <img src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" onclick="Home()" style="width: 25%;" loading="lazy">
+        </div>
+
+        <div>
+            <i class="fa-solid fa-bars" alt="bar-nav" title="button to open navigation" onclick="on()"></i>
+        </div>
+
+    </nav>
+
+    </header>
+
+    <main>
+        <div class="container hero-container">
+           <img class="hero-image" src="images/hero-image.png" 
+            alt="Concrete Floor Polished" load="lazy">  
+            <div class="hero-text">
+            <h4>2 Bro's</h4>
+            <h1>DECORATIVE CONCRETE & COATINGS</h1>
+        </div>
+            <div class="hero-btn" onclick="contacts()">
+                <item> <i class="fa-solid fa-phone"></i>CALL FOR A QUOTE
+                </item>
+            </div>
+        </div>
+
+
+        <div class="pricing">
+            <div class="pText">
+                <h1>How Do We Determine The Cost?</h1>
+                    <ul>
+                        <li>Size of the Area</li>
+                        <li>Condition of the Concrete</li>
+                        <li>Polishing Levels</li>
+                        <li>Type of Finish</li>
+                    </ul>
+                <p>The average price per foot is between <strong>$3-$12.</strong></p>
+            </div>
+
+        </div>
+
+
+        <DIV CLASS="spacer"></DIV>
+
+        <div class="finishType">
+            <h1>Type Of Finishes</h1>
+        </div>
+
+
+<div class="container card-container">
+    <div class="card-child">
+            <div class="fade card-text">
+            <h1>POLISHED CONCRETE</h1>
+        <ul>
+            <li> <strong>Description:</strong> Achieved through grinding and polishing the surface with progressively finer diamond abrasives.
+            </li>
+            <li><strong>Appearance:</strong> Can range from matte to high-gloss finishes.</li>
+            <li><strong>Benefits:</strong> Durable, low maintenance, and can enhance the natural look of the concrete.</li>
+        </ul> 
+            
+                 <h2 class="card-foot"></h2>
+        </div>
+    </div>
+    <DIV CLASS="spacer"></DIV>
+
+    <div class=" rightcard card-child">
+            <div class="fade rightside card-text">
+            <h1>STAINED CONCRETE</h1>
+            <ul>
+                <li> <strong>Description:</strong> Involves applying acid or water-based stains to color the concrete.
+                </li>
+                <li><strong>Appearance:</strong> Offers rich, variegated colors and can resemble natural stone.</li>
+                <li><strong>Benefits:</strong> Enhances aesthetics; can be used indoors and outdoors.</li>
+            </ul> 
+                <h2 class="card-foot"></h2>
+        </div>
+    </div>
+
+    <DIV CLASS="spacer"></DIV>
+
+    <div class="card-child">
+            <div class="fade card-text">
+            <h1>EPOXY COATINGS</h1>
+            <ul>
+                <li> <strong>Description:</strong> A polymer-based coating applied over concrete surfaces.
+                </li>
+                <li><strong>Appearance:</strong> High-gloss, often available in various colors and can include decorative flakes or metallic finishes.</li>
+                <li><strong>Benefits:</strong> Resistant to chemicals, stains, and abrasions; ideal for industrial and commercial spaces.</li>
+            </ul> 
+            <h2 class="card-foot"></h2>
+        </div>
+    </div>
+    <DIV CLASS="spacer"></DIV>
+
+    <div class="rightcard card-child">
+            <div class="fade rightside card-text">
+            <h1>EXPOSED AGGREGATE</h1>
+            <ul>
+                <li> <strong>Description:</strong> The top layer of concrete is removed to reveal the aggregate (stones, pebbles, or glass) underneath.
+                </li>
+                <li><strong>Appearance:</strong> Textured surface with a natural look.</li>
+                <li><strong>Benefits:</strong> Slip-resistant and aesthetically pleasing; ideal for outdoor use.</li>
+            </ul> 
+            <h2 class="card-foot"></h2>
+        </div>
+    </div>
+
+</div>
+
+<DIV CLASS="spacer" ></DIV>
+
+<div class="etc">
+<h1>Are These The Only Finishes That We Do?</h1>
+    <p>No, at <strong>2 bro's dcc</strong> we can do alot more than what we have listed,
+         <a  href="contacts.html"><strong class="call">Call</strong></a> to find out more.</p>
+</div>
+
+</main>
+</body>
+
+<DIV CLASS="spacer" ></DIV>
+
+<div class="footer-container">
+<!--Footer-->
+<footer>
+    
+<div>
+    <img class="footer-logo" src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" style="min-width: 40px;  width: 100%;" loading="lazy">
+<div class="links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a> 
+    <a href="faq.html">FAQ</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+</div>
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i>2 Bro's Decorative Concrete & Coatings</p>
+</div>
+</footer>
+</div>
+</html>

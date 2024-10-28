@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <meta name="description" content="2 Bro's Decorative Concrete and Coatings">
+        <meta name="keywords" content="Concrete Polishing, Staining, Epoxy, etc">
+        <meta name="author" content="Zach C">
+        <title>2Bros-dcc About</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- stylesheet -->
+         <link href="styles/aboutStyles.css" rel="stylesheet">
+         <link href="styles/Default.css" rel="stylesheet">
+         <!-- font awesome cdn -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+             integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="scripts/scripts.js" defer></script>
+    </head>
+
+<body>
+    <!-- overlay for mobile -->
+     <div id="overlay">
+        <div>
+            <i class="fa  fa-times" title="button to close mobile navigation" onclick="off()"></i>
+        </div>
+        <div class="overlay-text">
+            <a href="index.html">Home</a>
+            <div></div> <a href="about.html">About</a>
+            <div></div> <a href="faq.html">FAQ</a>
+            <div></div> <a href="contacts.html">Contacts</a>
+        </div>
+
+     </div>
+    <header>
+        <nav class="nav full-nav">
+            <div>
+                <img src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" onclick="Home()" style="width: 25%;" loading="lazy">
+            </div>
+            <div>
+                <a href="index.html"><i class="fa-solid fa-house"></i>  Home</a>
+                <a href="about.html"><i class="fa-solid fa-circle-question"></i>  About</a>
+                <a href="faq.html"><i class="fa-solid fa-clipboard-question"></i>  FAQ</a>
+                <a href="contacts.html"><i class="fa-regular fa-address-book"></i>  Contacts</a>
+            </div>
+    </nav>
+
+    <!-- mobile -->
+    <nav class="nav mobile-nav">
+        <div>
+            <img src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" onclick="Home()" style="width: 25%;" loading="lazy">
+        </div>
+
+        <div>
+            <i class="fa-solid fa-bars" title="button to open navigation" onclick="on()"></i>
+        </div>
+
+    </nav>
+
+    </header>
+
+
+    <head>
+
+        <div class="about">
+            <h1>About</h1>
+            <div class="about-grid" onclick="List(0)" >
+                <div class="about-child">
+                    <h2>Who We Are</h2>
+                    <ul class="LDescription" id="LDescription"> 
+                        <li>At <strong>2 Bro's dcc</strong>, we are passionate about transforming ordinary concrete into stunning,
+                             high-performance surfaces that elevate both residential and commercial spaces. With years of experience in concrete polishing,
+                              coatings, and decorative finishes, our skilled team is dedicated to delivering 
+                              quality craftsmanship and exceptional results.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="about-grid" onclick="List(1)" >
+                <div class="about-child">
+                    <h2>What We Do</h2>
+                    <ul class="LDescription" id="LDescription"> 
+                        <li><strong>Concrete Polishing:</strong> We specialize in polishing concrete to create a sleek, glossy finish that is easy to maintain and durable. 
+                            Our process enhances the natural beauty of the concrete while providing a resilient surface that can withstand heavy traffic
+                             and everyday wear.</li>
+                             <li>
+                                <strong>Coatings:</strong> Our wide range of high-quality coatings offers protection and style. 
+                            we apply coatings that not only shield your surfaces from damage but also add color and texture,
+                                 making your floors stand out.
+                             </li>
+                             <li>
+                                <strong>Decorative Finishes:</strong> We offer a variety of decorative concrete options, 
+                                stained, colored finishes, etc. 
+                             </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="about-grid" onclick="List(2)" >
+                    <div class="about-child">
+                        <h2>Our Mission</h2> 
+                    <ul class="LDescription" id="LDescription">
+                        <li>Our mission is to provide innovative concrete solutions that enhance durability and 
+                            aesthetic appeal. We aim to go above and beyond for our clients by creating surfaces that are not just stunning but built to last.
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="about-grid" onclick="List(3)" >
+                <div class="about-child">
+                    <h2>Why Choose Us?</h2> 
+                <ul class="LDescription" id="LDescription">
+                    <li><strong>Expertise:</strong> Our experienced professionals have a deep understanding of concrete properties and applications, 
+                        allowing us to provide tailored solutions for every project.
+                    </li>
+                   <li><strong>Customer Satisfaction:</strong> We prioritize our clients and work closely with them from concept to completion, 
+                    ensuring that their vision comes to life.
+                   </li>
+                </ul>
+            </div>
+        </div>
+         
+        <div class="about-grid" onclick="List(4)" >
+            <div class="about-child">
+                <h2>Our Commitment to Quality</h2> 
+            <ul class="LDescription" id="LDescription">
+                <li>At <strong>2 Bro's dcc</strong>, quality is at the forefront of everything we do. We use premium materials and state-of-the-art equipment to ensure that every project meets our high standards. Our team is committed to ongoing training and education to stay updated on the latest techniques and trends in the industry.
+                </li>
+     
+            </ul>
+        </div>
+    </div>
+
+        </div>
+   
+
+    </head>
+</body>
+
+    <div class="footer-container">
+        <!--Footer-->
+        <footer>
+            
+        <div>
+            <img class="footer-logo" src="images/Logo.png" alt="2 Bro's Decorative Concrete & Coatings" style="min-width: 40px;  width: 100%;" loading="lazy">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a> 
+            <a href="faq.html">FAQ</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>2 Bro's Decorative Concrete & Coatings</p>
+        </div>
+        </footer>
+        </div>
+        </html>
