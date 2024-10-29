@@ -95,6 +95,10 @@ body::-webkit-scrollbar {
         color: #e2e2e2;
     }
 
+.spacer {
+    padding-top: clamp(1rem, 15vw, 10rem);
+    padding-bottom: clamp(1rem, 5vw, 10rem);
+}
 
 
         /*sends footer to bootom of the page*/
