@@ -38,7 +38,7 @@ text-decoration: none;
 padding: 0 0.7rem;
 }
 
-.nav div:nth-child(2) a:nth-child(-n+4):has(a) {
+.nav div:nth-child(2) a {
     padding-left: 1rem;
 }
 
