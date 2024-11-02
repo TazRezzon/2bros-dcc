@@ -19,6 +19,14 @@ body::-webkit-scrollbar {
 }
 
 
+.nav div:nth-child(2) a:nth-child(4) {
+    border-style:solid;
+    border-top: #ffffff00;
+    border-left: #ffffff00;
+    border-right: #ffffff00;
+   
+}
+
 /* faq html*/
 
 
