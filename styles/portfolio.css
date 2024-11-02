@@ -71,9 +71,13 @@ animation-timing-function: linear;
     .Image {
         margin: 10px;
     }
+    .portfolio img {
+        width: 70%;
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.7);
+    }
     @keyframes infiniteScroll {
         from {transform: translateX(0) }
-        to {transform: translateX(calc(0px - 210% - 120px));}
+        to {transform: translateX(calc(0px - 420% - 120px));}
       }
 
 }
@@ -84,7 +88,7 @@ animation-timing-function: linear;
     }
     @keyframes infiniteScroll {
         from {transform: translateX(0) }
-        to {transform: translateX(calc(0px - 210% - 60px));}
+        to {transform: translateX(calc(0px - 420% - 60px));}
       }
 
 }
