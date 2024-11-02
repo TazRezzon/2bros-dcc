@@ -32,7 +32,7 @@ cursor: pointer;
     font-weight: bolder;
 }
 
-.nav div:nth-child(2) a:nth-child(-n+4) {
+.nav div:nth-child(2) a {
 color:#ffffff;
 text-decoration: none;
 padding: 0 0.7rem;
@@ -103,7 +103,7 @@ font-weight: 900;
     flex-direction: column;
     position: relative;
 left: 50%;
-transform: translate(-50%, 50%);
+transform: translate(-50%, 35%);
 }
 
 .overlay-text a {
@@ -181,7 +181,7 @@ footer  a {
 
 .links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 0rem clamp(4px, 1vw + .1rem, 50px);
 }
 
