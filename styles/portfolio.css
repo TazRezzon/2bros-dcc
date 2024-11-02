@@ -48,10 +48,11 @@ animation-timing-function: linear;
 .Image {
     margin: 20px;
 }
+/*add 35% to translateX for each image*/
 
 @keyframes infiniteScroll {
     from {transform: translateX(0) }
-    to {transform: translateX(calc(0px - 175% - 200px));}
+    to {transform: translateX(calc(0px - 210% - 240px));}
   }
 
   
@@ -61,7 +62,7 @@ animation-timing-function: linear;
     }
     @keyframes infiniteScroll {
         from {transform: translateX(0) }
-        to {transform: translateX(calc(0px - 175% - 150px));}
+        to {transform: translateX(calc(0px - 210% - 180px));}
       }
 
 }
@@ -72,7 +73,7 @@ animation-timing-function: linear;
     }
     @keyframes infiniteScroll {
         from {transform: translateX(0) }
-        to {transform: translateX(calc(0px - 175% - 100px));}
+        to {transform: translateX(calc(0px - 210% - 120px));}
       }
 
 }
@@ -83,8 +84,10 @@ animation-timing-function: linear;
     }
     @keyframes infiniteScroll {
         from {transform: translateX(0) }
-        to {transform: translateX(calc(0px - 175% - 50px));}
+        to {transform: translateX(calc(0px - 210% - 60px));}
       }
+
+}
 
 }
     /*sends footer to bootom of the page*/
