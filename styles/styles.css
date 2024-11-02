@@ -18,7 +18,13 @@ main{
     height: 100%;
 }
 
-
+.nav div:nth-child(2) a:nth-child(1) {
+    border-style:solid;
+    border-top: #ffffff00;
+    border-left: #ffffff00;
+    border-right: #ffffff00;
+   
+}
 
 
 body::-webkit-scrollbar {
